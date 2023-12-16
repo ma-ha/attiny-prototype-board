@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ftdi)(type Legacy)(uri ${KIPRJMOD}/ftdi.lib)(options "")(descr ""))
+  (lib (name attiny-prototype-board-rescue)(type Legacy)(uri ${KIPRJMOD}/attiny-prototype-board-rescue.lib)(options "")(descr ""))
+)
