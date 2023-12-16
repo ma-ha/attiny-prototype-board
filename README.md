@@ -14,7 +14,7 @@ Features:
   - 2/3x I2C
   - 2x Serial
 - ATtiny XX14
-- FTDI adapter
+- FTDI adapter (CH340E Micro USB Serial adapter)
   - UPDI programming
   - USB power
   - Serial debugging
