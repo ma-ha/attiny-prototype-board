@@ -1,6 +1,8 @@
 # ATtiny Prototype Board v2
 
-To simplify circuit prototypying wit the ATtiny XX14 this board can help you.
+Simplifies circuit prototypying with the ATtiny xx14.
+
+![1stBuild](board-finished.png) 
 
 Features:
 - Beadboard (400 pins)
@@ -19,14 +21,23 @@ Features:
   - USB power
   - Serial debugging
 
-![1stBuild](board-finished.png) 
 
 Videos:
 - Build: https://youtu.be/CmCrIgkOkTU (no talking)
 - Description https://youtu.be/84AR5vEIgwg (German)
 
-# v2.0 changes
+# Links
+
+- megaTinyCore Core: https://github.com/SpenceKonde/megaTinyCore
+- ATtiny xx14 Pinout https://github.com/SpenceKonde/megaTinyCore/blob/master/megaavr/extras/ATtiny_x14.md
+- Installation in Arduino IDE: https://github.com/SpenceKonde/megaTinyCore/blob/master/Installation.md
+
+# Release Notes
+
+## v2.0 changes
 
 - use THT LEDs, resistors, diode
 - use slide switch: more reliable and visible
 - use only socket header
+
+
