@@ -231,11 +231,11 @@ USB Progr + Power
 Wire Notes Line
 	2450 600  5100 600 
 Wire Notes Line
-	5100 600  5100 4100
+	5100 600  5100 5550
 Wire Notes Line
-	5100 4100 2450 4100
+	5100 5550 2450 5550
 Wire Notes Line
-	2450 4100 2450 600 
+	2450 5550 2450 600 
 Text Notes 3700 700  0    50   ~ 0
 ATtiny
 $Comp
@@ -552,49 +552,6 @@ Wire Wire Line
 	5700 3850 5700 3750
 Connection ~ 6200 3750
 $Comp
-L Switch:SW_Push SW3
-U 1 1 65631262
-P 9550 3050
-F 0 "SW3" H 9550 3335 50  0000 C CNN
-F 1 "SW_Push" H 9550 3244 50  0000 C CNN
-F 2 "ftdi:PushBtn6x6" H 9550 3250 50  0001 C CNN
-F 3 "~" H 9550 3250 50  0001 C CNN
-	1    9550 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x04_Odd_Even J21
-U 1 1 65637CEE
-P 9500 3450
-F 0 "J21" H 9550 3767 50  0000 C CNN
-F 1 "toBtn" H 9550 3676 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 9500 3450 50  0001 C CNN
-F 3 "~" H 9500 3450 50  0001 C CNN
-	1    9500 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW5
-U 1 1 65639E6E
-P 9550 3950
-F 0 "SW5" H 9550 3765 50  0000 C CNN
-F 1 "SW_Push" H 9550 3856 50  0000 C CNN
-F 2 "ftdi:PushBtn6x6" H 9550 4150 50  0001 C CNN
-F 3 "~" H 9550 4150 50  0001 C CNN
-	1    9550 3950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9750 3950 9900 3950
-Wire Wire Line
-	9200 3950 9350 3950
-Wire Wire Line
-	9200 3650 9200 3950
-Wire Wire Line
-	9900 3050 9750 3050
-Wire Wire Line
-	9200 3050 9350 3050
-$Comp
 L Connector_Generic:Conn_02x04_Odd_Even J16
 U 1 1 6565EC0B
 P 9400 2100
@@ -665,72 +622,72 @@ Text GLabel 2800 3950 0    50   Input ~ 0
 RXD
 Text GLabel 2800 3650 0    50   Output ~ 0
 TXD
-Text GLabel 4150 3650 0    50   BiDi ~ 0
+Text GLabel 3950 3800 0    50   BiDi ~ 0
 SDA
 $Comp
 L Device:R_Small R5
 U 1 1 657B3F43
-P 4050 3950
-F 0 "R5" V 3950 3950 50  0000 C CNN
-F 1 "10k" V 4150 3950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" H 4050 3950 50  0001 C CNN
-F 3 "~" H 4050 3950 50  0001 C CNN
-	1    4050 3950
+P 3900 4950
+F 0 "R5" V 3800 4950 50  0000 C CNN
+F 1 "1.5k" V 4000 4950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" H 3900 4950 50  0001 C CNN
+F 3 "~" H 3900 4950 50  0001 C CNN
+	1    3900 4950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4650 3750 4650 3850
+	4450 3900 4450 4000
 Wire Wire Line
-	4650 3650 4650 3750
-Connection ~ 4650 3750
+	4450 3800 4450 3900
+Connection ~ 4450 3900
 Wire Wire Line
-	4150 3750 4150 3850
+	3950 3900 3950 4000
 Wire Wire Line
-	4150 3650 4150 3750
-Connection ~ 4150 3750
+	3950 3800 3950 3900
+Connection ~ 3950 3900
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J25
 U 1 1 6572DD0A
-P 4350 3750
-F 0 "J25" H 4400 4067 50  0000 C CNN
-F 1 "I2C" H 4400 3976 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 4350 3750 50  0001 C CNN
-F 3 "~" H 4350 3750 50  0001 C CNN
-	1    4350 3750
+P 4150 3900
+F 0 "J25" H 4200 4217 50  0000 C CNN
+F 1 "I2C" H 4200 4126 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 4150 3900 50  0001 C CNN
+F 3 "~" H 4150 3900 50  0001 C CNN
+	1    4150 3900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R6
 U 1 1 657BB9B8
-P 4750 3950
-F 0 "R6" V 4650 3950 50  0000 C CNN
-F 1 "10k" V 4850 3950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" H 4750 3950 50  0001 C CNN
-F 3 "~" H 4750 3950 50  0001 C CNN
-	1    4750 3950
-	0    1    1    0   
+P 3900 4550
+F 0 "R6" V 3800 4550 50  0000 C CNN
+F 1 "1.5k" V 4000 4550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" H 3900 4550 50  0001 C CNN
+F 3 "~" H 3900 4550 50  0001 C CNN
+	1    3900 4550
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:VCC #PWR01
 U 1 1 657BBC9C
-P 3950 3950
-F 0 "#PWR01" H 3950 3800 50  0001 C CNN
-F 1 "VCC" V 3850 4050 50  0000 L CNN
-F 2 "" H 3950 3950 50  0001 C CNN
-F 3 "" H 3950 3950 50  0001 C CNN
-	1    3950 3950
+P 3800 4950
+F 0 "#PWR01" H 3800 4800 50  0001 C CNN
+F 1 "VCC" V 3700 5050 50  0000 L CNN
+F 2 "" H 3800 4950 50  0001 C CNN
+F 3 "" H 3800 4950 50  0001 C CNN
+	1    3800 4950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:VCC #PWR02
 U 1 1 657BCB66
-P 4850 3950
-F 0 "#PWR02" H 4850 3800 50  0001 C CNN
-F 1 "VCC" V 4950 4000 50  0000 L CNN
-F 2 "" H 4850 3950 50  0001 C CNN
-F 3 "" H 4850 3950 50  0001 C CNN
-	1    4850 3950
-	0    1    1    0   
+P 3800 4550
+F 0 "#PWR02" H 3800 4400 50  0001 C CNN
+F 1 "VCC" V 3900 4600 50  0000 L CNN
+F 2 "" H 3800 4550 50  0001 C CNN
+F 3 "" H 3800 4550 50  0001 C CNN
+	1    3800 4550
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J14
@@ -774,7 +731,7 @@ Wire Wire Line
 	9800 2500 10050 2500
 Connection ~ 9700 2300
 Connection ~ 9800 2500
-Text GLabel 4650 3650 2    50   BiDi ~ 0
+Text GLabel 4450 3800 2    50   BiDi ~ 0
 SCL
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J13
@@ -802,32 +759,6 @@ F 3 "~" H 4600 1350 50  0001 C CNN
 	1    4600 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9200 3050 9200 3350
-Wire Wire Line
-	9800 3450 9300 3450
-Wire Wire Line
-	9300 3350 9800 3350
-Wire Wire Line
-	9300 3550 9800 3550
-Wire Wire Line
-	9800 3650 9300 3650
-Wire Wire Line
-	9200 3650 9300 3650
-Connection ~ 9300 3650
-Wire Wire Line
-	9800 3550 9900 3550
-Wire Wire Line
-	9900 3550 9900 3950
-Connection ~ 9800 3550
-Wire Wire Line
-	9300 3350 9200 3350
-Connection ~ 9300 3350
-Wire Wire Line
-	9800 3450 9900 3450
-Connection ~ 9800 3450
-Wire Wire Line
-	9900 3050 9900 3450
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J5
 U 1 1 65A883E1
@@ -842,12 +773,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J8
 U 1 1 65A89E41
-P 7600 3300
-F 0 "J8" H 7650 3717 50  0000 C CNN
-F 1 "tinyRight" H 7650 3626 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Vertical" H 7600 3300 50  0001 C CNN
-F 3 "~" H 7600 3300 50  0001 C CNN
-	1    7600 3300
+P 7500 3450
+F 0 "J8" H 7550 4000 50  0000 C CNN
+F 1 "tinyRight" H 7550 3900 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Vertical" H 7500 3450 50  0001 C CNN
+F 3 "~" H 7500 3450 50  0001 C CNN
+	1    7500 3450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1110,54 +1041,6 @@ F 3 "~" H 8100 2500 50  0001 C CNN
 	1    8100 2500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_SPDT SW6
-U 1 1 658A7060
-P 8100 3200
-F 0 "SW6" H 8450 3250 50  0000 C CNN
-F 1 "SW_SPDT" H 8500 3150 50  0000 C CNN
-F 2 "ftdi:Switch_SPDT_1P2T" H 8100 3200 50  0001 C CNN
-F 3 "~" H 8100 3200 50  0001 C CNN
-	1    8100 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPDT SW7
-U 1 1 658A7FC8
-P 8100 3500
-F 0 "SW7" H 8450 3550 50  0000 C CNN
-F 1 "SW_SPDT" H 8500 3450 50  0000 C CNN
-F 2 "ftdi:Switch_SPDT_1P2T" H 8100 3500 50  0001 C CNN
-F 3 "~" H 8100 3500 50  0001 C CNN
-	1    8100 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 3100 7900 3100
-Wire Wire Line
-	7900 3100 7400 3100
-Connection ~ 7900 3100
-Wire Wire Line
-	7400 3200 7900 3200
-Connection ~ 7900 3200
-Wire Wire Line
-	7400 3300 7900 3300
-Connection ~ 7900 3300
-Wire Wire Line
-	7900 3300 8300 3300
-Wire Wire Line
-	7400 3400 7900 3400
-Connection ~ 7900 3400
-Wire Wire Line
-	7900 3400 8300 3400
-Wire Wire Line
-	7400 3500 7900 3500
-Connection ~ 7900 3500
-Wire Wire Line
-	7400 3600 7900 3600
-Connection ~ 7900 3600
-Wire Wire Line
-	7900 3600 8300 3600
 Wire Wire Line
 	7400 2200 7900 2200
 Connection ~ 7900 2200
@@ -1185,14 +1068,167 @@ Connection ~ 7900 2100
 Wire Wire Line
 	7900 2100 7400 2100
 $Comp
-L ftdi:FTDI-Adapter U?
+L ftdi:FTDI-Adapter U1
 U 1 1 657DF270
 P 1150 1500
-F 0 "U?" H 1208 1975 50  0000 C CNN
+F 0 "U1" H 1208 1975 50  0000 C CNN
 F 1 "FTDI-Adapter" H 1208 1884 50  0000 C CNN
-F 2 "" H 1350 1500 50  0001 C CNN
+F 2 "AudioChannel:FTDI" H 1350 1500 50  0001 C CNN
 F 3 "" H 1350 1500 50  0001 C CNN
 	1    1150 1500
 	1    0    0    -1  
+$EndComp
+$Comp
+L AudioChannel-cache:Switch_SW_Push_DPDT SW8
+U 1 1 65886125
+P 4300 4750
+F 0 "SW8" H 4300 5350 50  0000 C CNN
+F 1 "2x Switch" H 4300 5250 50  0000 C CNN
+F 2 "ftdi:Switch_SPDT_2P2T" H 4300 4950 50  0001 C CNN
+F 3 "" H 4300 4950 50  0001 C CNN
+	1    4300 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4500 5050 2    50   BiDi ~ 0
+SDA
+Text GLabel 4500 4650 2    50   BiDi ~ 0
+SCL
+Wire Wire Line
+	4000 4950 4100 4950
+Wire Wire Line
+	4000 4550 4100 4550
+NoConn ~ 4500 4450
+NoConn ~ 4500 4850
+Wire Wire Line
+	3950 4000 3950 4100
+Connection ~ 3950 4000
+Wire Wire Line
+	4450 4000 4450 4100
+Connection ~ 4450 4000
+$Comp
+L Switch:SW_Push_DPDT SW10
+U 1 1 6595D5F9
+P 9200 3450
+F 0 "SW10" H 9200 4050 50  0000 C CNN
+F 1 "SW_Push_DPDT" H 9200 3950 50  0000 C CNN
+F 2 "ftdi:PushBtn6x6" H 9200 3650 50  0001 C CNN
+F 3 "~" H 9200 3650 50  0001 C CNN
+	1    9200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 3150 10100 3250
+Wire Wire Line
+	10100 3350 10150 3350
+Wire Wire Line
+	10150 3350 10150 3050
+Wire Wire Line
+	9000 3050 9000 3250
+Wire Wire Line
+	9400 3350 9600 3350
+Wire Wire Line
+	9600 3250 9500 3250
+Wire Wire Line
+	9500 3250 9500 3050
+Wire Wire Line
+	10150 3050 9500 3050
+Wire Wire Line
+	9500 3050 9000 3050
+Connection ~ 9500 3050
+$Comp
+L Switch:SW_Push_DPDT SW9
+U 1 1 6595B92C
+P 10500 3750
+F 0 "SW9" H 10500 4235 50  0000 C CNN
+F 1 "SW_Push_DPDT" H 10500 4144 50  0000 C CNN
+F 2 "ftdi:PushBtn6x6" H 10500 3950 50  0001 C CNN
+F 3 "~" H 10500 3950 50  0001 C CNN
+	1    10500 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 3150 10100 3150
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J21
+U 1 1 65637CEE
+P 9800 3350
+F 0 "J21" H 9850 3667 50  0000 C CNN
+F 1 "toBtn" H 9850 3576 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 9800 3350 50  0001 C CNN
+F 3 "~" H 9800 3350 50  0001 C CNN
+	1    9800 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 3450 10300 3450
+Wire Wire Line
+	10100 3550 10100 3750
+Wire Wire Line
+	10100 3750 10700 3750
+Wire Wire Line
+	10700 3750 10700 3550
+Wire Wire Line
+	9600 3550 9600 3650
+Wire Wire Line
+	9600 3650 10300 3650
+Wire Wire Line
+	10100 3750 9500 3750
+Wire Wire Line
+	9500 3750 9500 3450
+Wire Wire Line
+	9500 3450 9600 3450
+Connection ~ 10100 3750
+Wire Wire Line
+	7800 3450 8450 3450
+Wire Wire Line
+	8450 3450 8450 3250
+Wire Wire Line
+	8450 3650 8450 3850
+Wire Wire Line
+	8450 3850 7900 3850
+Wire Wire Line
+	7900 3850 7850 3750
+Wire Wire Line
+	7850 3750 7800 3750
+Connection ~ 7800 3750
+Wire Wire Line
+	7800 3750 7300 3750
+Wire Wire Line
+	7300 3650 7800 3650
+Wire Wire Line
+	7850 3650 8050 3750
+Connection ~ 7800 3650
+Wire Wire Line
+	7800 3650 7850 3650
+Wire Wire Line
+	8050 3550 7800 3550
+Connection ~ 7800 3550
+Wire Wire Line
+	7800 3550 7300 3550
+Wire Wire Line
+	7300 3350 7800 3350
+Connection ~ 7800 3350
+Wire Wire Line
+	7800 3350 8050 3350
+Wire Wire Line
+	7300 3250 7800 3250
+Wire Wire Line
+	7900 3250 8050 3150
+Connection ~ 7800 3250
+Wire Wire Line
+	7800 3250 7900 3250
+Wire Wire Line
+	7800 3450 7300 3450
+Connection ~ 7800 3450
+$Comp
+L AudioChannel-cache:Switch_SW_Push_DPDT SW3
+U 1 1 65A7ED14
+P 8250 3450
+F 0 "SW3" H 8250 4050 50  0000 C CNN
+F 1 "2x Switch" H 8250 3950 50  0000 C CNN
+F 2 "ftdi:Switch_SPDT_2P2T" H 8250 3650 50  0001 C CNN
+F 3 "" H 8250 3650 50  0001 C CNN
+	1    8250 3450
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
