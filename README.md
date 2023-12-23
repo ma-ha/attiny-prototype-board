@@ -40,6 +40,7 @@ Improvements:
 - Switch (optional) for I2C
 - I2C labels and lines
 - Push buttons with opener and closer funtionality
+- Moved USART 
 
 Fixes: 
 - banana sockets were too close to border
