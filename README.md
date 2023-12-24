@@ -52,4 +52,59 @@ Fixes:
 - use slide switch: more reliable and visible
 - use only socket header
 
+# Blink All
 
+Use this "blink" code to check proper soldering for all ATtiny pins:
+
+    // BLINK ALL ATtiny xx14
+
+    void setup() {
+      pinMode( PIN_PA4, OUTPUT );
+      pinMode( PIN_PA5, OUTPUT );
+      pinMode( PIN_PA6, OUTPUT );
+      pinMode( PIN_PA7, OUTPUT );
+      pinMode( PIN_PB3, OUTPUT );
+      pinMode( PIN_PB2, OUTPUT );
+      
+      pinMode( PIN_PB1, OUTPUT );
+      pinMode( PIN_PB0, OUTPUT );
+      pinMode( PIN_PA0, OUTPUT );
+      pinMode( PIN_PA1, OUTPUT );
+      pinMode( PIN_PA2, OUTPUT );
+      pinMode( PIN_PA3, OUTPUT );
+      Serial.begin( 9600 );
+    }
+
+    void loop() {
+      digitalWrite( PIN_PA4, HIGH );   
+      digitalWrite( PIN_PA5, HIGH );   
+      digitalWrite( PIN_PA6, HIGH );   
+      digitalWrite( PIN_PA7, HIGH );   
+      digitalWrite( PIN_PB3, HIGH );   
+      digitalWrite( PIN_PB2, HIGH );
+        
+      digitalWrite( PIN_PB1, HIGH );   
+      digitalWrite( PIN_PB0, HIGH );   
+      digitalWrite( PIN_PA0, HIGH );   
+      digitalWrite( PIN_PA1, HIGH );   
+      digitalWrite( PIN_PA2, HIGH );   
+      digitalWrite( PIN_PA3, HIGH );   
+      Serial.println( "on" );
+      delay( 500 );                       
+      
+      digitalWrite( PIN_PA4, LOW );   
+      digitalWrite( PIN_PA5, LOW );   
+      digitalWrite( PIN_PA6, LOW );   
+      digitalWrite( PIN_PA7, LOW );   
+      digitalWrite( PIN_PB3, LOW );   
+      digitalWrite( PIN_PB2, LOW );
+        
+      digitalWrite( PIN_PB1, LOW );   
+      digitalWrite( PIN_PB0, LOW );   
+      digitalWrite( PIN_PA0, LOW );   
+      digitalWrite( PIN_PA1, LOW );   
+      digitalWrite( PIN_PA2, LOW );   
+      digitalWrite( PIN_PA3, LOW );   
+      Serial.println( "off" );
+      delay( 500 );                     
+    }
